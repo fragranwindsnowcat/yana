@@ -1,10 +1,166 @@
 <html>
-	<head>
-        <title>香風雪貓(夜娜)的Discord邀請連結系統</title>
-    </head>
-	
-<body>
+<head>
+  <title>夜娜伺服器</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
 
-<h2>香風雪貓(夜娜)的Discord邀請連結系統</h2>
-<span><a href="url/dis.html">夜之城</a></span>
-</body></html>
+<body style="background-color:black;">
+<font face="setofont">
+<p style="text-align:center"><span>&nbsp</p></span>
+<p style="text-align:center"><span>&nbsp</p></span>
+<p style="text-align:center"><span>&nbsp</p></span>
+<p style="text-align:center"><span>&nbsp</p></span>
+<p style="text-align:center"><span>&nbsp</p></span>
+<p style="text-align:center"><span>&nbsp</p></span>
+<p style="text-align:center"><span>&nbsp</p></span>
+<p style="text-align:center"><span>&nbsp</p></span>
+<p style="text-align:center"><span>&nbsp</p></span>
+
+<p style="text-align:center"><span style="color:#ffffff"><font size="6">🍦夜娜伺服器🍦</span></font></p>
+<hr align="center" width="30%"></hr>
+
+<script language="javascript">
+if (document.all){
+<!--在此修改光圈出現的數量-->
+amount=15;
+<!--在此修改光圈內圈顏色-->
+Color='#ffffff';
+<!--在此修改光圈外框顏色-->
+GlowColor='#FF0000';
+ypos=0;
+xpos=0;
+ybase=15;
+xbase=-80;
+step=0.7;
+currStep=0;
+TrigSplit=360/amount;
+MY=0;
+MX=0;
+C=0;
+c=0.05
+for (i=0; i < amount; i++)
+document.write('<div id="ieDiv" style="position:absolute;top:0px;left:0px;height:20;width:20;text-align:center"><B>.</B></div>');
+function tsaiannie(){
+MY=document.body.scrollTop+document.body.clientHeight/2 + document.body.clientHeight/2.8*Math.cos((C)/3)*Math.cos(C/10);
+MX=document.body.scrollLeft+20+document.body.clientWidth/2.2 + document.body.clientWidth/2.4*Math.sin((C)/5)*Math.sin(C/20);
+ypos=MY;
+xpos=MX;
+for (i=0; i < amount; i++){
+var d=ieDiv[i].style;
+if (d.pixelTop > ypos+2){
+ {
+  d.fontSize=18;
+  d.paddingTop=7;
+  d.filter='glow(color='+GlowColor+', strength=7)';
+ }
+if (d.pixelTop > ypos+10)
+ {
+  d.fontSize=15;
+  d.paddingTop=10;
+  d.filter='glow(color='+GlowColor+', strength=6)';
+ }}
+else
+{
+ d.fontSize=25;
+ d.paddingTop=0;
+ d.color=Color;
+ d.filter='glow(color='+GlowColor+', strength=8)';
+}
+d.top=ypos+ybase*Math.sin(currStep+i*TrigSplit*Math.PI/180);
+d.left=xpos+xbase*Math.cos(currStep+i*TrigSplit*Math.PI/180);
+}
+C+=c;
+currStep+=step;
+setTimeout('tsaiannie()',20);
+}
+window.onload=tsaiannie;
+}
+</script>
+
+<script language="JavaScript">
+<!--
+function gotoURL() {
+var Current = document.formName5.selectName5.selectedIndex;
+location.href =
+document.formName5.selectName5.options[Current].value;
+return false;
+}
+//-->
+</script>
+
+
+<hand><script language="javascript">
+
+//Five Main Variables:
+
+var phrase = "娜娜伺服器"; //¤å¦r
+var bouncespeed = 10;      //²¾°Ê±j«×
+var speed = 1;             //²¾°Ê³t«×
+var Xoffset = 15;          //±q·Æ¹«ªº¶ZÂ÷ªºx¶b
+var Yoffset = 15;          //±q·Æ¹«ªº¶ZÂ÷ªºy¶b¡C
+var color = "aqua";       //¦rÅéÃC¦â
+
+
+//Variables that don't need to be changed:
+
+var letters = new Array();
+letters = phrase.split('');
+var object;
+var theta = 0;
+var MouseX = 0;
+var MouseY = 0;
+
+//The rest of the code, change at your own risk:
+
+document.onmousemove=mouse;
+
+function mouse(e) {
+MouseX = event.x + Xoffset;
+MouseY = event.y + Yoffset;
+window.status = "(" + MouseX + ", " + MouseY + ")";
+}
+
+function createobjects() {
+for (i=0; i < letters.length; i++) {
+document.write('<div id="letterwave" style="position:absolute;"><font color='+color+'>'+letters[i]+'</font></div>');
+}
+object = document.all('letterwave');
+objectmove();
+}
+
+function objectmove() {
+theta += 4;
+for (i=0; i<letters.length; i++) {
+object[i].style.top = MouseY;
+var leftnum = MouseX + i * 10 + (Math.sin(theta * Math.PI / 180 + (2 * Math.PI / object.length * i))) * bouncespeed;
+if (leftnum < 0) {
+leftnum *= -1;
+}
+object[i].style.left = leftnum;
+}
+if (theta > 360) {
+theta = 0;
+}
+setTimeout("objectmove();", speed);
+}
+</script></hand>
+
+<script>
+createobjects();
+</script>
+
+
+<font face="setofont">
+  <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <a href="https://minecraft.net">
+      <button type="button" class="btn btn-primary" style="width:120px;height:40px;"> 遊戲下載</button>
+</font face></span></a></input>
+
+
+
+
+</font face></body></html>

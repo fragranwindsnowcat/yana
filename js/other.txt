@@ -1,0 +1,17 @@
+<div align="center">
+ <table>
+    <tr align="left" valign="top">
+      <td align="center">
+        <form name="formName5">
+          <p><select name="selectName5" size="1">
+            <option>選擇前去的地方</option>
+<option value="連結1">文字1</option>
+<option value="連結2">文字2</option>
+<option value="連結3">文字3</option>
+          </select><input name="submitName5" type="SUBMIT" value="Go!" onClick="return gotoURL()">
+          </p>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
